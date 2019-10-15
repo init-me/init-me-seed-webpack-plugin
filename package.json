@@ -5,7 +5,7 @@
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
-    "test": "jest ./test"
+    "test": "jest ./test/test.js"
   },
   "engines": {
     "node": ">= 8.0.0"

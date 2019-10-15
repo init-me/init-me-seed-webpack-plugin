@@ -1,5 +1,5 @@
 {
-  "name": "__inline('name')",
+  "name": "__data('name')",
   "version": "0.1.0",
   "engines": {
     "node": ">= 8.0.0"

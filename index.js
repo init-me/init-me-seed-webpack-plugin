@@ -17,7 +17,10 @@ const lang = {
   FORMAT_FILE_FINISHED: '格式化文件 完成',
 
   NPM_INSTALL_START: '正在安装依赖',
-  NPM_INSTALL_FINISHED: '安装依赖 完成'
+  NPM_INSTALL_FINISHED: '安装依赖 完成',
+
+  NPM_INIT_START: '正在初始化项目',
+  NPM_INIT_FINISHED: '初始化项目 完成'
 }
 
 let initData = {
@@ -139,6 +142,10 @@ const config = {
         print.log.info(lang.NPM_INSTALL_START)
         await extOs.runCMD('npm install', targetPath)
         print.log.success(lang.NPM_INSTALL_FINISHED)
+
+        print.log.info(lang.NPM_INIT_START)
+        await extOs.runSpawn('npm init', targetPath)
+        print.log.success(lang.NPM_INIT_FINISHED)
       }
       // - install
     }

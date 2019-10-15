@@ -1,4 +1,4 @@
-# __inline('name')
+# __data('name')
 
 ## USAGE
 ```javascript
