@@ -127,7 +127,8 @@ const config = {
       print.log.info(lang.FORMAT_FILE_START)
       const rPaths = [
         path.join(targetPath, 'README.md'),
-        path.join(targetPath, 'package.json')
+        path.join(targetPath, 'package.json'),
+        path.join(targetPath, 'index.js')
       ]
       rPaths.forEach((iPath) => {
         let cnt = fs.readFileSync(iPath).toString()

@@ -1,6 +1,6 @@
 {
   "name": "init-me-seed-webpack-plugin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "init-me seed init-me-seed-webpack-plugin",
   "main": "index.js",
   "types": "index.d.ts",
