@@ -3,7 +3,7 @@
 //   throw `__inline('name') error: ${msg}`
 // }
 
-class IWebpackPlugin {
+class WebpackPlugin {
   constructor() {
     // TODO:
   }
@@ -17,4 +17,4 @@ class IWebpackPlugin {
   }
 }
 
-module.exports = IWebpackPlugin
+module.exports = WebpackPlugin
