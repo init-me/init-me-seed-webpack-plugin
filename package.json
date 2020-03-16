@@ -7,6 +7,75 @@
   "scripts": {
     "test": "jest ./test/test.js"
   },
+  "eslintConfig": {
+    "env": {
+      "mocha": true,
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:node/recommended"
+    ],
+    "rules": {
+      "semi": [
+        "error",
+        "never"
+      ],
+      "node/no-unpublished-require": [
+        0
+      ],
+      "node/exports-style": [
+        "error",
+        "module.exports"
+      ],
+      "node/file-extension-in-import": [
+        "error",
+        "always"
+      ],
+      "node/prefer-global/buffer": [
+        "error",
+        "always"
+      ],
+      "node/prefer-global/console": [
+        "error",
+        "always"
+      ],
+      "node/prefer-global/process": [
+        "error",
+        "always"
+      ],
+      "node/prefer-global/url-search-params": [
+        "error",
+        "always"
+      ],
+      "node/prefer-global/url": [
+        "error",
+        "always"
+      ],
+      "node/prefer-promises/dns": "error",
+      "node/prefer-promises/fs": 0,
+      "quote-props": [
+        "error",
+        "consistent"
+      ],
+      "no-empty": [
+        "error",
+        {
+          "allowEmptyCatch": true
+        }
+      ],
+      "indent": [
+        "warn",
+        2
+      ]
+    }
+  },
+  "eslintIgnore": [
+    "node_modules",
+    "/test/case",
+    "yyt",
+    "__frag"
+  ],
   "engines": {
     "node": ">= 8.0.0"
   },
@@ -23,6 +92,8 @@
     "yyl-replacer": "0.2.1"
   },
   "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-node": "^11.0.0",
     "jest": "^24.9.0",
     "yyl-fs": "0.3.2",
     "yyl-util": "2.3.5"
