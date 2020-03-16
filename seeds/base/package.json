@@ -15,7 +15,7 @@
   },
   "eslintConfig": {
     "env": {
-      "mocha": true,
+      "jest": true,
       "node": true
     },
     "extends": [

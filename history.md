@@ -1,4 +1,7 @@
 # 版本信息
+## 0.1.3 (2020-03-16)
+* feat: 更新初始化配置， 合并掉 eslintrc 到 package.json
+* feat: 内置 eslint 相关依赖
 ## 0.1.2 (2019-10-19)
 * fix: 去除没必要的 插件
 * feat: seed 包 添加构建前 清除 dist 文件夹功能

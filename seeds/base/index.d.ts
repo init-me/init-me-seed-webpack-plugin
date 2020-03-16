@@ -1,6 +1,6 @@
-declare class IWebpackPlugin {
-  constructor(op: IWebpackPluginOptions)
+declare class WebpackPlugin {
+  constructor(op: WebpackPluginOptions)
 }
-interface IWebpackPluginOptions {
+interface WebpackPluginOptions {
 }
-export =IWebpackPlugin 
+export = WebpackPlugin 
