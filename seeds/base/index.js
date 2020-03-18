@@ -16,6 +16,7 @@ class WebpackPlugin {
     // compiler.hooks.emit.tap(
     //   PLUGIN_NAME,
     //   (compilation) => {
+    //     const logger = compilation.getLogger(PLUGIN_NAME)
     //   }
     // )
   }
