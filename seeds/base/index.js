@@ -18,6 +18,7 @@ class WebpackPlugin {
       (compilation) => {
         const logger = compilation.getLogger(PLUGIN_NAME)
         logger.group(PLUGIN_NAME)
+        logger.info('hello plugin')
         // TODO: main code
         logger.groupEnd()
       }
