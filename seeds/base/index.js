@@ -1,11 +1,15 @@
-// const PLUGIN_NAME = 'iPlugin'
-// const printError = function(msg) {
-//   throw `__inline('name') error: ${msg}`
-// }
+const { getHooks } = require('./lib/hooks')
+const PLUGIN_NAME = 'iPlugin'
 
 class WebpackPlugin {
   constructor() {
     // TODO:
+  }
+  static getName() {
+    return PLUGIN_NAME
+  }
+  static getHooks(compilation) {
+    return getHooks(compilation)
   }
   apply(/*compiler*/) {
     // const { output, context } = compiler.options

@@ -1,4 +1,7 @@
 # 版本信息
+## 0.1.4 (2020-03-18)
+* feat: 初始化文件添加 hooks 相关文件
+
 ## 0.1.3 (2020-03-16)
 * feat: 更新初始化配置， 合并掉 eslintrc 到 package.json
 * feat: 内置 eslint 相关依赖
