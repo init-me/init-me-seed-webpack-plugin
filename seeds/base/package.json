@@ -97,5 +97,6 @@
     "yyl-util": "^2.3.7"
   },
   "dependencies": {
+    "tapable": "^1.1.3"
   }
 }
