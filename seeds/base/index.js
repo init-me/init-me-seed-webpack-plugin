@@ -11,14 +11,17 @@ class WebpackPlugin {
   static getHooks(compilation) {
     return getHooks(compilation)
   }
-  apply(/*compiler*/) {
-    // const { output, context } = compiler.options
-    // compiler.hooks.emit.tap(
-    //   PLUGIN_NAME,
-    //   (compilation) => {
-    //     const logger = compilation.getLogger(PLUGIN_NAME)
-    //   }
-    // )
+  apply(compiler) {
+    const { output, context } = compiler.options
+    compiler.hooks.emit.tap(
+      PLUGIN_NAME,
+      (compilation) => {
+        const logger = compilation.getLogger(PLUGIN_NAME)
+        logger.group(PLUGIN_NAME)
+        // TODO: main code
+        logger.groupEnd()
+      }
+    )
   }
 }
 
